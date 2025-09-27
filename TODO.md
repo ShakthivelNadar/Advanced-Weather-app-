@@ -1,0 +1,4 @@
+- [x] Add id="windIcon" to wind speed img in index.html
+- [x] Add getBeaufort function in script.js
+- [x] Modify updateAll to set windIcon src based on beaufort
+- [x] Modify displayHistoricalDay to set wind icon based on beaufort
