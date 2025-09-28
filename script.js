@@ -67,11 +67,11 @@ const windText = (k) => k < 6 ? 'Calm' : (k < 20 ? 'Breezy' : (k < 38 ? 'Windy' 
 const getBeaufort = (speed) => {
   if (speed < 1) return 0;
   if (speed <= 5) return 1;
-  if (speed <= 11) return 2;
-  if (speed <= 19) return 3;
-  if (speed <= 28) return 4;
-  if (speed <= 38) return 5;
-  if (speed <= 49) return 6;
+  if (speed <= 12) return 2;
+  if (speed <= 20) return 3;
+  if (speed <= 29) return 4;
+  if (speed <= 39) return 5;
+  if (speed <= 50) return 6;
   return 6; // cap at 6
 };
 const aqiText = (v) => v==null ? '—' : v<=50?'Good':v<=100?'Moderate':v<=150?'Unhealthy (SG)':v<=200?'Unhealthy':v<=300?'Very Unhealthy':'Hazardous';
